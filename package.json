@@ -1,0 +1,18 @@
+{
+  "name": "conexiontea-prototipo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototipo de ConexiónTEA con API de autenticación y MySQL",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express-mysql-session": "^3.0.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.15.3"
+  }
+}
