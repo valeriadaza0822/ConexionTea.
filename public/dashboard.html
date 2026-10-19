@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ConexiónTEA 2.0 - Panel principal</title>
+
+    <meta
+        name="description"
+        content="Plataforma de comunicación y apoyo para personas con TEA"
+    >
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="brand">
+            <span class="brand-icon">◆</span>
+            <span>ConexiónTEA 2.0</span>
+        </div>
+
+        <nav class="top-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#comunicacion">Comunicación</a>
+            <a href="#pictogramas">Pictogramas</a>
+        </nav>
+
+        <button id="logoutBtn" class="logout-btn">
+            Cerrar sesión
+        </button>
+
+    </header>
+
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-user">
+
+                <div class="avatar" id="userAvatar">
+                    U
+                </div>
+
+                <div>
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <small id="sidebarRole">
+                        Mi perfil
+                    </small>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <button class="menu-btn active" data-section="comunicacion">
+                    <span>Comunicación</span>
+                </button>
+
+                <button class="menu-btn" data-section="pictogramas">
+                    <span>Biblioteca de pictogramas</span>
+                </button>
+
+                <button class="menu-btn" data-section="actividades">
+                    <span>Actividades</span>
+                </button>
+
+                <button class="menu-btn" data-section="rutina">
+                    <span>Rutina diaria</span>
+                </button>
+
+                <button class="menu-btn" data-section="calendario">
+                    <span>Calendario</span>
+                </button>
+
+                <button class="menu-btn" data-section="progreso">
+                    <span>Progreso</span>
+                </button>
+
+                <button class="menu-btn" id="navFamilyChat" data-section="familia">
+                    <span>Chat familiares</span>
+                </button>
+
+                <button class="menu-btn" id="navProfessionalChat" data-section="profesional">
+                    <span>Chat profesional</span>
+                </button>
+
+                <button class="menu-btn" id="navPeerChat" data-section="pares">
+                    <span>Chat con pares</span>
+                </button>
+
+                <button class="menu-btn" data-section="perfil">
+                    <span>Perfil</span>
+                </button>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <section id="inicio" class="welcome-section">
+
+                <div>
+                    <p class="section-label" id="welcomeEyebrow">
+                        PANEL PRINCIPAL
+                    </p>
+
+                    <h1 id="welcomeTitle">
+                        Bienvenido a ConexiónTEA 2.0
+                    </h1>
+
+                    <p class="welcome-text" id="welcomeText">
+                        Un espacio diseñado para apoyar la comunicación,
+                        organización y participación diaria.
+                    </p>
+                </div>
+
+                <div class="welcome-avatar" id="welcomeAvatar">
+                    U
+                </div>
+
+            </section>
+
+
+            <!-- ACCESOS RÁPIDOS -->
+            <section class="quick-grid" id="quickGrid">
+
+                <button class="quick-card" data-section="comunicacion">
+                    <span class="quick-icon">A</span>
+
+                    <strong>
+                        Comunicación
+                    </strong>
+
+                    <small>
+                        Crear mensajes y utilizar voz
+                    </small>
+                </button>
+
+
+                <button class="quick-card" data-section="pictogramas">
+                    <span class="quick-icon">P</span>
+
+                    <strong>
+                        Biblioteca de pictogramas
+                    </strong>
+
+                    <small>
+                        Utilizar pictogramas ARASAAC
+                    </small>
+                </button>
+
+
+                <button class="quick-card" data-section="actividades">
+                    <span class="quick-icon">T</span>
+
+                    <strong>
+                        Actividades
+                    </strong>
+
+                    <small>
+                        Revisar actividades pendientes
+                    </small>
+                </button>
+
+
+                <button class="quick-card" data-section="rutina">
+                    <span class="quick-icon">R</span>
+
+                    <strong>
+                        Rutina diaria
+                    </strong>
+
+                    <small>
+                        Organizar actividades del día
+                    </small>
+                </button>
+
+            </section>
+
+
+            <!-- PANEL DINÁMICO -->
+            <section class="content-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="section-label">
+                            MÓDULO
+                        </p>
+
+                        <h2 id="panelTitle">
+                            Comunicación
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div id="panelContent">
+                    <!-- JavaScript carga el contenido -->
+                </div>
+
+            </section>
+
+
+            <!-- PROGRESO -->
+            <section class="progress-panel">
+
+                <div class="progress-header">
+
+                    <div>
+                        <p class="section-label">
+                            SEGUIMIENTO
+                        </p>
+
+                        <h2>
+                            Mi progreso
+                        </h2>
+                    </div>
+
+                    <strong>
+                        72%
+                    </strong>
+
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-value"></div>
+                </div>
+
+                <p>
+                    Progreso general de las actividades registradas.
+                </p>
+
+            </section>
+
+
+            <!-- ACCESIBILIDAD -->
+            <section class="accessibility-panel">
+
+                <p class="section-label">
+                    ACCESIBILIDAD
+                </p>
+
+                <h2>
+                    Personalización
+                </h2>
+
+                <div class="accessibility-controls">
+
+                    <label>
+                        Tamaño del texto
+
+                        <select id="fontSizeControl">
+
+                            <option value="normal">
+                                Normal
+                            </option>
+
+                            <option value="large">
+                                Grande
+                            </option>
+
+                            <option value="extra-large">
+                                Muy grande
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label>
+                        Tema
+
+                        <select id="themeControl">
+
+                            <option value="light">
+                                Claro
+                            </option>
+
+                            <option value="relaxed">
+                                Suave
+                            </option>
+
+                            <option value="dark">
+                                Oscuro
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label class="checkbox-control">
+
+                        <input
+                            type="checkbox"
+                            id="reduceMotion"
+                        >
+
+                        Reducir animaciones
+
+                    </label>
+
+
+                    <label class="checkbox-control">
+
+                        <input
+                            type="checkbox"
+                            id="screenReader"
+                        >
+
+                        Lectura de texto
+
+                    </label>
+
+
+                    <label class="checkbox-control">
+
+                        <input
+                            type="checkbox"
+                            id="vibrationControl"
+                        >
+
+                        Vibraciones
+
+                    </label>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            ConexiónTEA 2.0
+        </p>
+
+        <p>
+            Pictogramas proporcionados por ARASAAC.
+        </p>
+
+        <p>
+            Los pictogramas ARASAAC se distribuyen bajo licencia
+            Creative Commons BY-NC-SA.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
