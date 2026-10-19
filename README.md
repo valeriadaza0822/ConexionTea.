@@ -23,6 +23,12 @@ npm start
 
 Abre <http://localhost:3000>. Las páginas están en `public/`; no abras sus HTML directamente ni uses Live Server, porque el acceso y el registro necesitan que la API esté activa.
 
+ConexiónTEA es una plataforma web accesible que facilita la comunicación de personas con Trastorno del Espectro Autista (TEA) mediante pictogramas interactivos.
+
+🛠️ Tecnologías
+Frontend: React.js + Vite
+Backend: Node.js + Express
+Base de Datos: MySQL 8.0
 ## API y base de datos MySQL
 
 La API es la parte del servidor que recibe solicitudes del sitio y responde con datos. Por ejemplo, el formulario envía el correo y la contraseña a `POST /api/auth/login`; el servidor verifica la cuenta en MySQL y devuelve el perfil sin enviar la contraseña.
